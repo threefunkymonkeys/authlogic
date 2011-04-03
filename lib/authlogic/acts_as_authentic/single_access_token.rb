@@ -47,7 +47,7 @@ module Authlogic
           # same as reset_single_access_token, but then saves the record.
           def reset_single_access_token!
             reset_single_access_token
-            save_without_session_maintenance
+            save_without_session_maintenance(:validate => false)
           end
       
           protected
