@@ -212,5 +212,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<activesupport>, [">= 0"])
   end
+  s.add_dependency(%q<activerecord>, [">= 3.0.0"])
+  s.add_dependency(%q<bcrypt-ruby>, [">= 0"])
 end
 
